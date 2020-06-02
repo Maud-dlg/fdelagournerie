@@ -1,3 +1,31 @@
+  <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <%= link_to "#", class: "navbar-brand" do %>
+    <%= image_tag "https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" %>
+  <% end %>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <%= link_to "Home", "#", class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Messages", "#", class: "nav-link" %>
+      </li>
+      <li class="nav-item dropdown">
+        <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <%= link_to "Action", "#", class: "dropdown-item" %>
+          <%= link_to "Another action", "#", class: "dropdown-item" %>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
   <div class="banner">
     <div class="container">
       <h1>Franck de La Gournerie</h1>
@@ -40,19 +68,6 @@
       </div>
     </div>
   </div>
-
-    <div class="container pt-5">
-      <div>
-        <h4>Franck de la Gournerie, votre courtier de proximité</h4>
-        <%= image_tag "avatar-franck", :class => "card-fdlg-user"%>
-      </div>
-      <div class="card-cv" >
-        <h6>Mon parcours</h6>
-        <p>Agent général d’assurance au cœur du pays de retz, en 2004 je crée un cabinet de courtage en assurance à la personne. J’étais en charge notamment des dossiers de financement de défiscalisation et d’assurance de prêts auprès de courtiers en Crédit Immobilier. En 2012, je décide de me spécialiser exclusivement dans le crédit immobilier et crée mon propre cabinet En 2019 je rejoins Vousfinancer afin de vous faire bénéficier de l’expertise de la référence des courtiers en crédit.</p>
-        <h6>Mon métier</h6>
-        <p>Je privilégie le conseil et l’accompagnement du porteur de projet, afin de lui trouver la meilleure solution adaptée à sa situation. Le rendez-vous de « découverte client » est une première étape primordiale. Il va me permettre de comprendre le projet du client, le contexte personnel et professionnel dans lequel il s’inscrit, les contraintes éventuelles à prendre en compte. La proximité géographique de la banque, qui sera en charge du suivi et de l’accompagnement du crédit, au regard du lieu de vie ou du lieu de travail, est l’un des paramètres déterminant de la préconisation finale.</p>
-      </div>
-    </div>
 
     <div class="container text-center pt-5">
       <h2 class="title-color"> Mes services </h2>
