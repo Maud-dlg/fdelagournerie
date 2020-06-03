@@ -1,13 +1,13 @@
 
 .btn-home {
-  color: white;
+  color: #184F8D;
   border: none;
   padding: 15px 24px;
   border-radius: 4px;
-  background: #1773A4;
+  background: white;
   transition: background 0.3s ease;
   &:hover {
-    background-color: #1773A4;
+    background-color: #184F8D;
     opacity: 0.8;
   }
 }

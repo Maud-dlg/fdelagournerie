@@ -1,11 +1,11 @@
 .page-title {
-  color: #2e626a;
+  color: white;
   font-weight: bold;
   font-size: 70px;
 }
 
 .title-color {
-  color:#FE5F55;
+  color:#184F8D;
   text-align: center;
   padding-bottom: 40px;
 }
@@ -16,18 +16,18 @@ p {
 }
 
 .img-home {
-  background-image: asset-url("home-signature.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 300px;
+  //background-image: asset-url("avatar-franck.png");
+  //background-size: cover;
+  //background-position: center;
+  //height: 100vh;
   //display: flex;
   //justify-content: center;
   //align-items: center;
-  color: white;
+  //color: white;
   //font-size: 24px;
   //font-weight: bold;
   //text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  border-radius: 5px;
+  //border-radius: 5px;
   //box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
@@ -36,7 +36,7 @@ p {
   margin-bottom: 10px;
   font-size: 5rem;
   align-items:center;
-  height: 300px;
+  height: 350px;
 }
 
 .card p {
