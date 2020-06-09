@@ -3,9 +3,12 @@
   //border-radius: 50%;
 //}
 
-.avatar img {
+.avatar {
+  display: flex;
+  justify-content: center;
+  img {
   width: 380px;
   align-items: center;
-
+  }
 }
 
