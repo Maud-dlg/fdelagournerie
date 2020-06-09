@@ -23,8 +23,8 @@
 
 .card-product {
   overflow: hidden;
-  height: 300px;
-  width: 1000px;
+  // height: 300px;
+  // width: 1000px;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
@@ -32,9 +32,9 @@
 }
 
 .card-product img {
-  height: 100%;
-  width: 300px;
-  object-fit: cover;
+  // height: 100%;
+  // max-width: 300px;
+  // object-fit: cover;
 }
 
 .card-product h2 {
@@ -53,4 +53,16 @@
 
 .card-product .card-product-infos {
   padding: 16px;
+  padding-left: 30px;
+}
+
+.map {
+  padding: 0;
+
+}
+
+.map img {
+  max-height: 300px;
+  object-fit: cover;
+
 }
