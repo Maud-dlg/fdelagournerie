@@ -4,6 +4,12 @@
  background-color: white;
  border-radius: 12px;
  text-align: left;
- width: 600px;
+ //width: 550px;
+}
 
+.body-form{
+  background-image: asset-url("fondformulaire");
+  background-size: cover;
+  background-position: center;
+  padding:20px 0px;
 }
