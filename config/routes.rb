@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   get'/mentionslegales', to: 'pages#mentionslegales'
   get'/formulaire', to: 'pages#formulaire'
+  get'/actualites', to: 'pages#actualites'
   resources :users, only: [:index, :show]
 end

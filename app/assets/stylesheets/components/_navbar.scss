@@ -1,6 +1,7 @@
 .navbar-lewagon {
   justify-content: space-between;
   background: white;
+  height: 12vh;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -9,4 +10,27 @@
 
 .navbar-logo {
   width: 200px;
+}
+
+.lien-navbar {
+  color: #184F8D;
+  text-decoration: none;
+  font-size: 18px;
+  padding-right: 30px;
+  padding-top: 12px;
+  outline: 0;
+  &:hover {
+    color: $orange;
+    text-decoration: none;
+  }
+}
+
+.lien-navbar {
+  a {
+    color: #184F8D;
+    &:hover {
+      color: $orange;
+      text-decoration: none;
+    }
+  }
 }
