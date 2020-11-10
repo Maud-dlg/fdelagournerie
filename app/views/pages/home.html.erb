@@ -22,6 +22,12 @@
     </div>
   </div>
 
+  <div class="container pt-5">
+    <h2 class="title-color"> Taux de novembre</h2>
+    <div class="taux"><%= image_tag "TauxCreditNovembre-FDLGcourtier.png"%></div>
+      <!-- Taux fixes hors assurance selon votre profil, taux moyen constaté -->
+  </div>
+
     <div class="container pt-5">
       <h3 class="title-color">Des conseils pour obtenir le meilleur taux pour son crédit immobilier ?</h3>
 
@@ -53,14 +59,18 @@
             <div class="col-12 col-lg-6">
               <div class="card">
                 <h5>Étude de financement</h5>
-                <%= image_tag "courtage4.png"%>
+                <%= link_to'https://www.franckdelagournerie-courtier.com/etudefinancement' do %>
+                  <%= image_tag "courtage4.png"%>
+                <% end %>
                 <p>J'interviens en amont du projet, mon rôle est d’évaluer votre capacité d’emprunt et la valeur du bien que vous pouvez acquérir.</p>
               </div>
             </div>
             <div class="col-12 col-lg-6">
               <div class="card">
                 <h5>Crédit immobilier</h5>
-                <%= image_tag"courtage1.png" %>
+                <%= link_to'https://www.franckdelagournerie-courtier.com/creditimmobilier' do %>
+                  <%= image_tag"courtage1.png" %>
+                <% end %>
                 <p>Passer par un courtier vous donne accès à une offre bancaire complète pour trouver une solution financière sur-mesure pour votre projet.</p>
               </div>
             </div>
@@ -71,14 +81,18 @@
             <div class="col-12 col-lg-6">
               <div class="card">
                 <h5>Renégociation de prêt</h5>
-                <%= image_tag"courtage2.png" %>
+                <%= link_to'https://www.franckdelagournerie-courtier.com/renegociationpret' do %>
+                  <%= image_tag"courtage2.png" %>
+                <% end %>
                 <p> Diminuez vos mensualités regroupant vos différents crédits (immobilier, à la consommation...) en un seul, afin de ne rembourser qu'une seule mensualité allégée*.</p>
               </div>
             </div>
             <div class="col-12 col-lg-6">
               <div class="card">
                 <h5>Assurance de prêt</h5>
-                <%= image_tag "courtage3.png"%>
+                <%= link_to'https://www.franckdelagournerie-courtier.com/assurancepret' do %>
+                  <%= image_tag "courtage3.png"%>
+                <% end %>
                 <p class="text-center"> Je vous aide à sécuriser vos projets en vous proposant des solutions adaptées à votre profil et à vos besoins pour vous faire bénéficier des meilleurs garanties.</p>
               </div>
             </div>

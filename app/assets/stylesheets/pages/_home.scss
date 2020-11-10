@@ -24,3 +24,13 @@ p {
 .simulateur {
   background-color: #F4F4F4;
 }
+
+.taux {
+  display: flex;
+  justify-content: center;
+  img {
+  width: 1000px;
+  //height: 300px;
+  align-items: center;
+  }
+}
