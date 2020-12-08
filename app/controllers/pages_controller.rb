@@ -6,7 +6,7 @@ class PagesController < ApplicationController
   end
 
   def send_contact
-    ContactMailerJob.perform_async(params[:message], params[:email])
+    ContactMailerJob.perform_async(params[:message], params[:email], params[:phone], params[:firstname], params[:lastname], params[:postcode], params[:nature], params[:avancement], params[:budget])
     flash[:notice] = "Votre message a bien été envoyé !"
     redirect_back(fallback_location: root_path) # les messages flash Rails ne s'affichent qu'après rechargement de la page·
   end
