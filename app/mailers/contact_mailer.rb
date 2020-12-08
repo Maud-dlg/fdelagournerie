@@ -1,4 +1,4 @@
-class UserMailer < ApplicationMailer
+class ContactMailer < ApplicationMailer
   def contact(message, email)
     @message = message
     @email = email
