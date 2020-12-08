@@ -13,7 +13,7 @@ Rails.application.configure do
       authentication: "plain",
       enable_starttls_auto: true,
       user_name: ENV["GMAIL_EMAIL"],
-      password: ENV["GMAIL_PASSWORD"],
+    password: ENV["GMAIL_PASSWORD"],
   }
   # Settings specified here will take precedence over those in config/application.rb.
 

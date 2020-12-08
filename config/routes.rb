@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get '/creditimmobilier', to: 'pages#creditimmobilier'
   get '/assurancepret', to: 'pages#assurancepret'
   get '/renegociationpret', to: 'pages#renegociationpret'
-  get '/formulaire', to: 'pages#formulaire'
+  get '/contact', to: 'pages#contact'
   post "send_contact" => "pages#send_contact"
   get '/actualites', to: 'pages#actualites'
   resources :users, only: [:index, :show]
