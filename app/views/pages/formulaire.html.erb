@@ -3,69 +3,73 @@
     <div class="pt-5">
       <p class="pb-5">Grâce au formulaire ci-dessous, effectuez une simulation en ligne pour une demande de prêt pour un crédit immobilier. Nous vous recontacterons dans les plus brefs délais !</p>
     </div>
-    <form action="#" class= "signup-form">
-              <h2 class="text-center mb-5">Simulation de Crédit immobilier</h2>
-              <div class="form-row">
+    <form action="/send_formulaire" method="post" class= "signup-form">
+      <h2 class="text-center mb-5">Simulation de Crédit immobilier</h2>
+      <div class="form-row">
 
-                <div class="col-12 form-group">
-                  <label for="referrer">Nature de votre projet</label>
-                  <select id="referrer" class=" form-control">
-                    <option value="">Résidence principale</option>
-                    <option value="">Résidence secondaire</option>
-                    <option value="">Locatif</option>
-                    <option value="">Travaux</option>
-                    <option value="">Travaux</option>
-                  </select>
-                </div>
+        <div class="col-12 form-group">
+          <label for="referrer">Nature de votre projet</label>
+          <select id="referrer" class=" form-control">
+            <option value="">Résidence principale</option>
+            <option value="">Résidence secondaire</option>
+            <option value="">Locatif</option>
+            <option value="">Travaux</option>
+            <option value="">Travaux</option>
+          </select>
+        </div>
 
-                <div class="col-12 form-group">
-                  <label for="referrer">Avancement de votre projet</label>
-                  <select id="referrer" class=" form-control">
-                    <option value="">En recherche de bien immobilier</option>
-                    <option value="">Signature</option>
-                    <option value="">Compromis</option>
-                    <option value="">Autre</option>
-                  </select>
-                </div>
+        <div class="col-12 form-group">
+          <label for="referrer">Avancement de votre projet</label>
+          <select id="referrer" class=" form-control">
+            <option value="">En recherche de bien immobilier</option>
+            <option value="">Signature</option>
+            <option value="">Compromis</option>
+            <option value="">Autre</option>
+          </select>
+        </div>
 
-                <div class="col-12 form-group">
-                  <label for="message">Montant du projet à financier</label>
-                  <input type="text" class="form-control" id="message" placeholder="Ex : 250 000">
-                </div>
+        <div class="col-12 form-group">
+          <label for="message">Montant du projet à financier</label>
+          <input type="text" class="form-control" id="message" placeholder="Ex : 250 000">
+        </div>
 
-                <div class="col-6 form-group">
-                  <label>Prénom</label>
-                  <input type="text" id="First name" class="form-control" placeholder="Votre prénom">
-                </div>
+        <div class="col-6 form-group">
+          <label>Prénom</label>
+          <input type="text" id="First name" class="form-control" placeholder="Votre prénom">
+        </div>
 
-                <div class="col-6 form-group">
-                  <label>Nom</label>
-                  <input type="text" id="Last name" class="form-control" placeholder="Votre nom">
-                </div>
+        <div class="col-6 form-group">
+          <label>Nom</label>
+          <input type="text" id="Last name" class="form-control" placeholder="Votre nom">
+        </div>
 
-                <div class="col-6 form-group">
-                  <label for="email">Email</label>
-                  <input type="email" id="email" class="form-control" placeholder="Votre email">
-                </div>
+        <div class="col-6 form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" class="form-control" placeholder="Votre email">
+        </div>
 
-                <div class="col-6 form-group">
-                  <label for="example-tel-input">Téléphone</label>
-                  <input type="tel" id="example-tel-input" class="form-control" placeholder="Votre téléphone">
-                </div>
+        <div class="col-6 form-group">
+          <label for="example-tel-input">Téléphone</label>
+          <input type="tel" id="example-tel-input" class="form-control" placeholder="Votre téléphone">
+        </div>
 
-                <div class="col-12 form-group">
-                  <label for="message">Code postal</label>
-                  <input type="text" class="form-control" id="message" placeholder="Ex : 44680">
-                </div>
+        <div class="col-12 form-group">
+          <label for="message">Code postal</label>
+          <input type="text" class="form-control" id="message" placeholder="Ex : 44680">
+        </div>
 
-                <div class="col-12 form-group">
-                  <label for="message">Message</label>
-                  <input type="text" class="form-control" id="message" placeholder="N'hésitez pas à nous laisser un message">
-                </div>
+        <!-- <div class="col-12 form-group">
+          <label for="message">Message</label>
+          <input type="text" class="form-control" id="message" placeholder="N'hésitez pas à nous laisser un message">
+        </div> -->
 
+        <textarea name="message" class="form-control" placeholder="N'hésitez pas à nous laisser un message"></textarea>
+        <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
 
-                <input type="submit" class="btn btn-success w-100" value="Valider">
-              </div>
+        <button class="btn btn-success margin-btn w-100" type="submit">Envoyer</button>
+
+        <!-- <input type="submit" class="btn btn-success w-100" value="Valider"> -->
+      </div>
     </form>
   </div>
 </div>
