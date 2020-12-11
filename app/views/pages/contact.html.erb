@@ -6,27 +6,50 @@
     <form action="/send_contact" method="post" class= "signup-form">
       <h2 class="text-center mb-5">Simulation de Crédit immobilier</h2>
       <div class="form-row">
+        <label for="referrer">Nature de votre projet</label>
+          <div class="col-12 form-group">
+            <%= radio_button_tag(:nature, "principale") %>
+              <%= label_tag(:nature_principale, "Résidence principale") %>
+            <%= radio_button_tag(:nature, "secondaire") %>
+              <%= label_tag(:nature_secondaire, "Résidence secondaire") %>
+            <%= radio_button_tag(:nature, "locatif") %>
+              <%= label_tag(:nature_locatif, "Locatif") %>
+            <%= radio_button_tag(:nature, "travaux") %>
+              <%= label_tag(:nature_travaux, "Travaux") %>
+          </div>
 
-        <div class="col-12 form-group">
+        <label for="referrer">Avancement de votre projet</label>
+          <div class="col-12 form-group">
+            <%= radio_button_tag(:avancement, "recherche") %>
+              <%= label_tag(:avancement_recherche, "En recherche de bien immobilier") %>
+            <%= radio_button_tag(:avancement, "signature") %>
+              <%= label_tag(:avancement_signature, "Signature") %>
+            <%= radio_button_tag(:avancement, "compromis") %>
+              <%= label_tag(:avancement_compromis, "Compromis") %>
+            <%= radio_button_tag(:avancement, "autre") %>
+              <%= label_tag(:avancement_autre, "Autre") %>
+          </div>
+
+       <!--  <div class="col-12 form-group">
           <label for="referrer">Nature de votre projet</label>
           <select name="nature" id="referrer" class=" form-control">
-            <option value="">Résidence principale</option>
-            <option value="">Résidence secondaire</option>
-            <option value="">Locatif</option>
-            <option value="">Travaux</option>
-            <option value="">Travaux</option>
-          </select>
+            <option value="Résidence principale">Résidence principale</option>
+            <option value="Résidence secondaire">Résidence secondaire</option>
+            <option value="Locatif">Locatif</option>
+            <option value="Travaux">Travaux</option -->
+            <!-- <option value="">Travaux</option> -->
+         <!--  </select>
         </div>
 
         <div class="col-12 form-group">
           <label for="referrer">Avancement de votre projet</label>
           <select name="avancement" id="referrer" class=" form-control">
-            <option value="">En recherche de bien immobilier</option>
-            <option value="">Signature</option>
-            <option value="">Compromis</option>
-            <option value="">Autre</option>
+            <option value="En recherche de bien immobilier">En recherche de bien immobilier</option>
+            <option value="Signature">Signature</option>
+            <option value="Compromis">Compromis</option>
+            <option value="Autre">Autre</option>
           </select>
-        </div>
+        </div> -->
 
         <div class="col-12 form-group">
           <label for="message">Montant du projet à financier</label>
