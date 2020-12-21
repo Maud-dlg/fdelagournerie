@@ -6,30 +6,62 @@
     <form action="/send_contact" method="post" class= "signup-form">
       <h2 class="text-center mb-5">Simulation de Crédit immobilier</h2>
       <div class="container">
-        <!-- <div class="form-first-part row">
+        <div class="form-first-part row">
           <div class="col-12 col-lg-6 form-group">
             <label class="form-labels">Nature de votre projet</label>
-            <div>
-              <%= radio_button_tag(:nature, "Résidence principale") %>
-              <%= label_tag(:nature_principale, "Résidence principale") %>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="nature" id="principale" value="Résidence principale">
+              <label class="form-check-label" for="principale">
+                Résidence principale
+              </label>
             </div>
-            <div>
-              <%= radio_button_tag(:nature, "Résidence secondaire") %>
-              <%= label_tag(:nature_secondaire, "Résidence secondaire") %>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="nature" id="secondaire" value="Résidence secondaire">
+              <label class="form-check-label" for="secondaire">
+                Résidence secondaire
+              </label>
             </div>
-            <div>
-              <%= radio_button_tag(:nature, "Locatif") %>
-              <%= label_tag(:nature_locatif, "Locatif") %>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="nature" id="locatif" value="Locatif">
+              <label class="form-check-label" for="locatif">
+                Locatif
+              </label>
             </div>
-            <div>
-              <%= radio_button_tag(:nature, "Travaux") %>
-              <%= label_tag(:nature_travaux, "Travaux") %>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="nature" id="travaux" value="Travaux">
+              <label class="form-check-label" for="travaux">
+                Travaux
+              </label>
             </div>
           </div>
 
           <div class="col-12 col-lg-6 form-group">
             <label class="form-labels">Avancement de votre projet</label>
-            <div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="avancement" id="recheche" value="En recherche de bien immobilier">
+              <label class="form-check-label" for="recherche">
+                En recherche de bien immobilier
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="avancement" id="signature" value="Signature">
+              <label class="form-check-label" for="signature">
+                Signature
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="avancement" id="compromis" value="Compromis">
+              <label class="form-check-label" for="compromis">
+                Compromis
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="avancement" id="autre" value="Autre">
+              <label class="form-check-label" for="autre">
+                Autre
+              </label>
+            </div>
+            <!-- <div>
               <%= radio_button_tag(:avancement, "En recherche de bien immobilier") %>
               <%= label_tag(:avancement_recherche, "En recherche de bien immobilier") %>
             </div>
@@ -44,9 +76,9 @@
             <div>
               <%= radio_button_tag(:avancement, "Autre") %>
               <%= label_tag(:avancement_autre, "Autre") %>
-            </div>
-          </div> -->
-        <!-- </div> -->
+            </div> -->
+          </div>
+        </div>
 
        <!--  <div class="col-12 form-group">
           <label for="referrer">Nature de votre projet</label>
@@ -68,7 +100,7 @@
             <option value="Autre">Autre</option>
           </select>
         </div> -->
-  <!--       <div class="row">
+        <div class="row">
           <div class="col-12 form-group">
             <label class="form-labels" for="message">Montant du projet à financier</label>
             <input name="budget" type="text" class="form-control" id="message" placeholder="Ex : 250 000">
@@ -104,7 +136,7 @@
             <label class="form-labels" for="message">Code postal</label>
             <input name="postcode" type="text" class="form-control" id="message" placeholder="Ex : 44680">
           </div>
-        </div> -->
+        </div>
 
         <!-- <div class="col-12 form-group">
           <label for="message">Message</label>
