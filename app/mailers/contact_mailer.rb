@@ -10,6 +10,7 @@ class ContactMailer < ApplicationMailer
     @avancement = avancement
     @budget = budget
 
+    # l'adresse ci-dessous est la seule indiquant le destinataire (l'adresse à laquelle le mail sera envoyé)
     mail(to: 'fdelagournerie@gmail.com', subject: 'Nouveau message depuis le formulaire de contact sur FDLG-COURTIER')
   end
 end
