@@ -1,221 +1,127 @@
-
-  <<<<<<< HEAD
-    <div class="body-form">
-      <div class="container text-center pt-5">
-        <div class="pt-5">
-          <p class="pb-5">Grâce au formulaire ci-dessous, effectuez une simulation en ligne pour une demande de prêt pour un crédit immobilier. Nous vous recontacterons dans les plus brefs délais !</p>
-        </div>
-        <form action="/send_contact" method="post" class= "signup-form">
-          <h2 class="text-center mb-5">Simulation de Crédit immobilier</h2>
-          <div class="container">
-            <div class="form-first-part row">
-              <div class="col-12 col-lg-6 form-group">
-                <label class="form-labels">Nature de votre projet</label>
-                <div>
-                  <%= radio_button_tag(:nature, "Résidence principale") %>
-                  <%= label_tag(:nature_principale, "Résidence principale") %>
-                </div>
-                <div>
-                  <%= radio_button_tag(:nature, "Résidence secondaire") %>
-                  <%= label_tag(:nature_secondaire, "Résidence secondaire") %>
-                </div>
-                <div>
-                  <%= radio_button_tag(:nature, "Locatif") %>
-                  <%= label_tag(:nature_locatif, "Locatif") %>
-                </div>
-                <div>
-                  <%= radio_button_tag(:nature, "Travaux") %>
-                  <%= label_tag(:nature_travaux, "Travaux") %>
-                </div>
-              </div>
-
-              <div class="col-12 col-lg-6 form-group">
-                <label class="form-labels">Avancement de votre projet</label>
-                <div>
-                  <%= radio_button_tag(:avancement, "En recherche de bien immobilier") %>
-                  <%= label_tag(:avancement_recherche, "En recherche de bien immobilier") %>
-                </div>
-                <div>
-                  <%= radio_button_tag(:avancement, "Signature") %>
-                  <%= label_tag(:avancement_signature, "Signature") %>
-                </div>
-                <div>
-                  <%= radio_button_tag(:avancement, "Compromis") %>
-                  <%= label_tag(:avancement_compromis, "Compromis") %>
-                </div>
-                <div>
-                  <%= radio_button_tag(:avancement, "Autre") %>
-                  <%= label_tag(:avancement_autre, "Autre") %>
-                </div>
-  =======
-  <div class="body-form">
-    <div class="container text-center pt-5">
-      <div class="pt-5">
-        <p class="pb-5">Grâce au formulaire ci-dessous, effectuez une simulation en ligne pour une demande de prêt pour un crédit immobilier. Nous vous recontacterons dans les plus brefs délais !</p>
-      </div>
-      <form action="/send_contact" method="post" class= "signup-form">
-        <h2 class="text-center mb-5">Simulation de Crédit immobilier</h2>
-        <div class="container">
-          <div class="form-first-part row">
-            <div class="col-12 col-lg-6 form-group">
-              <label class="form-labels">Nature de votre projet</label>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="nature" id="principale" value="Résidence principale">
-                <label class="form-check-label" for="principale">
-                  Résidence principale
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="nature" id="secondaire" value="Résidence secondaire">
-                <label class="form-check-label" for="secondaire">
-                  Résidence secondaire
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="nature" id="locatif" value="Locatif">
-                <label class="form-check-label" for="locatif">
-                  Locatif
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="nature" id="travaux" value="Travaux">
-                <label class="form-check-label" for="travaux">
-                  Travaux
-                </label>
-              </div>
-            </div>
-
-            <div class="col-12 col-lg-6 form-group">
-              <label class="form-labels">Avancement de votre projet</label>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="avancement" id="recherche" value="En recherche de bien immobilier">
-                <label class="form-check-label" for="recherche">
-                  En recherche de bien immobilier
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="avancement" id="signature" value="Signature">
-                <label class="form-check-label" for="signature">
-                  Signature
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="avancement" id="compromis" value="Compromis">
-                <label class="form-check-label" for="compromis">
-                  Compromis
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="avancement" id="autre" value="Autre">
-                <label class="form-check-label" for="autre">
-                  Autre
-                </label>
-  >>>>>>> e6604349d367a154a065b69d9e97400220ecc41b
-              </div>
-            </div>
-
-  <<<<<<< HEAD
-           <!--  <div class="col-12 form-group">
-              <label for="referrer">Nature de votre projet</label>
-              <select name="nature" id="referrer" class=" form-control">
-                <option value="Résidence principale">Résidence principale</option>
-                <option value="Résidence secondaire">Résidence secondaire</option>
-                <option value="Locatif">Locatif</option>
-                <option value="Travaux">Travaux</option -->
-                <!-- <option value="">Travaux</option> -->
-             <!--  </select>
-            </div>
-
-  =======
-          <div class="row">
-  >>>>>>> e6604349d367a154a065b69d9e97400220ecc41b
-            <div class="col-12 form-group">
-              <label for="referrer">Avancement de votre projet</label>
-              <select name="avancement" id="referrer" class=" form-control">
-                <option value="En recherche de bien immobilier">En recherche de bien immobilier</option>
-                <option value="Signature">Signature</option>
-                <option value="Compromis">Compromis</option>
-                <option value="Autre">Autre</option>
-              </select>
-            </div> -->
-            <div class="row">
-              <div class="col-12 form-group">
-                <label class="form-labels" for="message">Montant du projet à financier</label>
-                <input name="budget" type="text" class="form-control" id="message" placeholder="Ex : 250 000">
-              </div>
-            </div>
-
-  <<<<<<< HEAD
-            <div class="row">
-              <div class="col-12 col-lg-6 form-group">
-                <label class="form-labels">Prénom</label>
-                <input name="firstname" type="text" id="First name" class="form-control" placeholder="Votre prénom">
-              </div>
-
-              <div class="col-12 col-lg-6 form-group">
-                <label class="form-labels">Nom</label>
-                <input name="lastname" type="text" id="Last name" class="form-control" placeholder="Votre nom">
-              </div>
-  =======
-          <div class="row">
-            <div class="col-12 col-lg-6 form-group">
-              <label class="form-labels">Nom*</label>
-              <input name="lastname" type="text" id="Last name" class="form-control" placeholder="Votre nom" required>
-            </div>
-
-            <div class="col-12 col-lg-6 form-group">
-              <label class="form-labels">Prénom</label>
-              <input name="firstname" type="text" id="First name" class="form-control" placeholder="Votre prénom">
-  >>>>>>> e6604349d367a154a065b69d9e97400220ecc41b
-            </div>
-
-  <<<<<<< HEAD
-            <div class="row">
-              <div class="col-12 col-lg-6 form-group">
-                <label class="form-labels" for="email">Email</label>
-                <input name="email" type="email" id="email" class="form-control" placeholder="Votre email">
-              </div>
-  =======
-          <div class="row">
-            <div class="col-12 col-lg-6 form-group">
-              <label class="form-labels" for="email">Email*</label>
-              <input name="email" type="email" id="email" class="form-control" placeholder="Votre email" required>
-            </div>
-  >>>>>>> e6604349d367a154a065b69d9e97400220ecc41b
-
-              <div class="col-12 col-lg-6 form-group">
-                <label class="form-labels" for="example-tel-input">Téléphone</label>
-                <input name="phone" type="tel" id="example-tel-input" class="form-control" placeholder="Votre téléphone">
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-12 form-group">
-                <label class="form-labels" for="message">Code postal</label>
-                <input name="postcode" type="text" class="form-control" id="message" placeholder="Ex : 44680">
-              </div>
-            </div>
-
-            <!-- <div class="col-12 form-group">
-              <label for="message">Message</label>
-              <input type="text" class="form-control" id="message" placeholder="N'hésitez pas à nous laisser un message">
-            </div> -->
-            <!-- <input name="email" type="email" class="form-control mb-1" placeholder="Votre email"> -->
-            <div class="row">
-              <div class="col-12 form-group">
-                <textarea name="message" class="form-control" placeholder="N'hésitez pas à nous laisser un message"></textarea>
-              </div>
-            </div>
-
-            <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
-
-            <div class="row">
-              <div class="col-12 form-group">
-                <button class="btn btn-success w-100" type="submit">Envoyer</button>
-              </div>
-            </div>
-            <!-- <input type="submit" class="btn btn-success w-100" value="Valider"> -->
-          </div>
-        </form>
-      </div>
+<div class="body-form">
+  <div class="container text-center pt-5">
+    <div class="pt-5">
+      <p class="pb-5">Grâce au formulaire ci-dessous, effectuez une simulation en ligne pour une demande de prêt pour un crédit immobilier. Nous vous recontacterons dans les plus brefs délais !</p>
     </div>
+    <form action="/send_contact" method="post" class= "signup-form">
+      <h2 class="text-center mb-5">Simulation de Crédit immobilier</h2>
+      <div class="container">
+        <div class="form-first-part row">
+          <div class="col-12 col-lg-6 form-group">
+            <label class="form-labels">Nature de votre projet</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="nature" id="principale" value="Résidence principale">
+              <label class="form-check-label" for="principale">
+                Résidence principale
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="nature" id="secondaire" value="Résidence secondaire">
+              <label class="form-check-label" for="secondaire">
+                Résidence secondaire
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="nature" id="locatif" value="Locatif">
+              <label class="form-check-label" for="locatif">
+                Locatif
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="nature" id="travaux" value="Travaux">
+              <label class="form-check-label" for="travaux">
+                Travaux
+              </label>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6 form-group">
+            <label class="form-labels">Avancement de votre projet</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="avancement" id="recherche" value="En recherche de bien immobilier">
+              <label class="form-check-label" for="recherche">
+                En recherche de bien immobilier
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="avancement" id="signature" value="Signature">
+              <label class="form-check-label" for="signature">
+                Signature
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="avancement" id="compromis" value="Compromis">
+              <label class="form-check-label" for="compromis">
+                Compromis
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="avancement" id="autre" value="Autre">
+              <label class="form-check-label" for="autre">
+                Autre
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 form-group">
+            <label class="form-labels" for="message">Montant du projet à financier</label>
+            <input name="budget" type="text" class="form-control" id="message" placeholder="Ex : 250 000">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-lg-6 form-group">
+            <label class="form-labels">Nom*</label>
+            <input name="lastname" type="text" id="Last name" class="form-control" placeholder="Votre nom" required>
+          </div>
+
+          <div class="col-12 col-lg-6 form-group">
+            <label class="form-labels">Prénom</label>
+            <input name="firstname" type="text" id="First name" class="form-control" placeholder="Votre prénom">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-lg-6 form-group">
+            <label class="form-labels" for="email">Email*</label>
+            <input name="email" type="email" id="email" class="form-control" placeholder="Votre email" required>
+          </div>
+
+          <div class="col-12 col-lg-6 form-group">
+            <label class="form-labels" for="example-tel-input">Téléphone</label>
+            <input name="phone" type="tel" id="example-tel-input" class="form-control" placeholder="Votre téléphone">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 form-group">
+            <label class="form-labels" for="message">Code postal</label>
+            <input name="postcode" type="text" class="form-control" id="message" placeholder="Ex : 44680">
+          </div>
+        </div>
+
+        <!-- <div class="col-12 form-group">
+          <label for="message">Message</label>
+          <input type="text" class="form-control" id="message" placeholder="N'hésitez pas à nous laisser un message">
+        </div> -->
+        <!-- <input name="email" type="email" class="form-control mb-1" placeholder="Votre email"> -->
+        <div class="row">
+          <div class="col-12 form-group">
+            <textarea name="message" class="form-control" placeholder="N'hésitez pas à nous laisser un message"></textarea>
+          </div>
+        </div>
+
+        <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+
+        <div class="row">
+          <div class="col-12 form-group">
+            <button class="btn btn-success w-100" type="submit">Envoyer</button>
+          </div>
+        </div>
+        <!-- <input type="submit" class="btn btn-success w-100" value="Valider"> -->
+      </div>
+    </form>
+  </div>
+</div>
