@@ -17,20 +17,16 @@
 
 p {
   font-size:20px;
-  //word-spacing: 0.1em;
-  //padding-right: 10px;
-}
-
-.simulateur {
-  background-color: #F4F4F4;
 }
 
 .taux {
   display: flex;
   justify-content: center;
   img {
-  width: 1000px;
-  //height: 300px;
+  width: 100%;
+  height: auto;
   align-items: center;
   }
 }
+
+
