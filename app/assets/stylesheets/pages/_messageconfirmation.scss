@@ -1,0 +1,31 @@
+.confirmation-container {
+  height: 90vh;
+}
+.title-confirmation {
+  text-align: center;
+  padding-top: 20vh;
+  font-size: 50px;
+}
+.check {
+  text-align: center;
+  font-size: 200px;
+  color: #0F956A;
+  // padding: 30px;
+}
+.flex-button {
+  display: flex;
+  justify-content: center;
+}
+.btn-confirmation {
+  color: white;
+  border: none;
+  padding: 15px 24px;
+  border-radius: 4px;
+  background: #184F8D;
+  transition: background 0.3s ease;
+  &:hover {
+    background-color: #184F8D;
+    opacity: 0.8;
+    color: white;
+  }
+}
