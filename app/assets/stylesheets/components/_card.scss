@@ -1,8 +1,16 @@
-//.card-info{
-  //display: flex;
-  //align-items: center;
-  //justify-content: space-between;
-//}
+.card-contact{
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  padding: 20px;
+  text-align: center;
+  width: 380px;
+}
+
+.icon-contact{
+  color:#81b29a;
+  font-size: 4em;
+  padding-bottom: 20px;
+  }
 
 .card-intro{
   width: 100%;

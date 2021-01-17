@@ -11,3 +11,16 @@
     opacity: 0.8;
   }
 }
+
+.btn-contact {
+  color: #184F8D;
+  border-color: #184F8D;
+  font-weight: 500;
+  border-radius: 4px;
+  //line-height: 1.5;
+  &:hover {
+    background-color: #184F8D;
+    opacity: 0.8;
+  }
+
+}
